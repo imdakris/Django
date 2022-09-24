@@ -51,7 +51,9 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ item.title }}</h5>
-                    <center class="card-text">{{ item.content }}</center>
+                    {% autoescape off %}
+                    <p class="card-text">{{ item.content }}</p>
+                    {% endautoescape %}
                     <a href="#" class="btn btn-primary">Read more ...</a>
                 </div>
                 <div class="card-footer text-muted">
